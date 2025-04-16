@@ -16,4 +16,6 @@ public class Client extends Utilisateur{
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
 	@JoinColumn(name = "ADDRESS_ID")
 	private Adresse adresse;
+
+
 }
